@@ -4,6 +4,15 @@ Pipeline completo de MLOps para classificação de emoções em textos em portug
 
 ---
 
+## Equipe
+
+| Nome | GitHub |
+|------|--------|
+| Alexandre Teixeira da Silva | [@AlexandreTeixeira](https://github.com/AlexandreTeixeira) |
+| César Braz de Oliveira | [@CesarBraz](https://github.com/CesarBraz) |
+| Ícaro Guimarães Canto | [@IcaroCanto](https://github.com/IcaroCanto) |
+| Priscila Leylianne da Silva Gonçalves | [@PriscilaGon](https://github.com/priscilagon) |
+
 ## Visão Geral
 
 O projeto transforma um dataset multi-label de 28 emoções em um classificador de 7 macro-categorias, treinado com TF-IDF + LinearSVC e disponibilizado como aplicação web interativa.
@@ -123,7 +132,7 @@ streamlit run app.py
 ### Pré-requisitos
 
 - Python 3.11+
-- Conta no [DagsHub](https://dagshub.com) com repositório criado
+- Conta no [DagsHub]((https://dagshub.com/cbdo.cid25/emocoes-app/)) com repositório criado
 
 ### Instalação
 
@@ -174,7 +183,7 @@ O arquivo [`render.yaml`](render.yaml) na raiz do repositório instrui o Render 
 
 **Passos:**
 
-1. Conecte o repositório `priscilagon/emocoes-app` no [Render Dashboard](https://dashboard.render.com)
+1. Conecte o repositório `priscilagon/emocoes-app` no [Render Dashboard](https://dashboard.render.com/web/srv-d7vp9bhj2pic73en95hg)
 2. O Render detecta o `render.yaml` automaticamente e configura o serviço como Docker
 3. Acesse **Environment** no painel do serviço e adicione as três variáveis secretas:
 
@@ -188,7 +197,7 @@ O arquivo [`render.yaml`](render.yaml) na raiz do repositório instrui o Render 
 
 > Durante o build, o Render passa essas variáveis como Docker build args automaticamente. O `Dockerfile` usa esses args para rodar `python -m src.evaluate`, que baixa o modelo do DagsHub e gera o `src/model.pkl` dentro da imagem.
 
-**URL de produção:** https://emocoes-app.onrender.com
+**URL de produção:** [Acesso:](https://emocoes-app.onrender.com/)
 
 > O plano gratuito do Render hiberna após inatividade — a primeira requisição pode demorar até 50 segundos para o serviço acordar.
 
@@ -218,3 +227,17 @@ docker run -p 8501:8501 emocional-app
 | Interface | Streamlit |
 | Containerização | Docker |
 | Deploy | Render |
+
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+
+<p align="center">
+  <b>Universidade do Estado do Amazonas (UEA)</b><br>
+  Escola Superior de Tecnologia<br>
+  Infraestrutura em Nuvem para Projetos com Ciência dos Dados - Prof. Dr. Fábio Santos da Silva <br>
+  2025/2026
+</p>
