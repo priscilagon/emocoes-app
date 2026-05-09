@@ -197,7 +197,7 @@ O arquivo [`render.yaml`](render.yaml) na raiz do repositório instrui o Render 
 
 > Durante o build, o Render passa essas variáveis como Docker build args automaticamente. O `Dockerfile` usa esses args para rodar `python -m src.evaluate`, que baixa o modelo do DagsHub e gera o `src/model.pkl` dentro da imagem.
 
-**URL de produção:** [Acesso:](https://emocoes-app.onrender.com/)
+**URL de produção:** [emocoes-app](https://emocoes-app.onrender.com/)
 
 > O plano gratuito do Render hiberna após inatividade — a primeira requisição pode demorar até 50 segundos para o serviço acordar.
 
