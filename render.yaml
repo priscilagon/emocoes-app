@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: emocoes-app
+    runtime: docker
+    plan: free
+    envVars:
+      - key: DAGSHUB_USER
+        sync: false
+      - key: DAGSHUB_REPO
+        sync: false
+      - key: DAGSHUB_TOKEN
+        sync: false
